@@ -1,0 +1,27 @@
+<div class="container my-5">
+    <h2 class="mb-5 font-monospace text-primary">Lista de Empleados</h2>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr class="table-primary">
+                <th scope="col">#Id</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Apellido</th>
+                <th scope="col">Puesto</th>
+                <th scope="col">Acciones</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let empleado of empleados">
+            <tr>
+                <th scope="row">{{ empleado.id }}</th>
+                <th>{{ empleado.nombre }}</th>
+                <th>{{ empleado.apellido }}</th>
+                <td>{{ empleado.puesto }}</td>
+                <td>
+                    <app-empleado-hijo [empleado]="empleado" (empleadoEditado)="actualizarEmpleadoActualizado($event)">
+                    </app-empleado-hijo>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

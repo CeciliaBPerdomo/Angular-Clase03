@@ -1,0 +1,14 @@
+<div *ngIf="!editando">
+  <button 
+  class="btn btn-outline-primary"
+  (click)="editar()">
+  Editar
+</button>
+</div>
+
+<div *ngIf="editando">
+  <input [(ngModel)]="nombreEditado" placeholder="Nombre" />
+  <input [(ngModel)]="puestoEditado" placeholder="Puesto" />
+  <button (click)="guardar()">Guardar</button>
+</div>
+
