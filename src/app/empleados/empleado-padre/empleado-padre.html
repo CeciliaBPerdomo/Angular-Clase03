@@ -18,7 +18,9 @@
                 <th>{{ empleado.apellido }}</th>
                 <td>{{ empleado.puesto }}</td>
                 <td>
-                    <app-empleado-hijo [empleado]="empleado" (empleadoEditado)="actualizarEmpleadoActualizado($event)">
+                    <app-empleado-hijo 
+                    [empleado]="empleado" 
+                    (empleadoEditado)="actualizarEmpleadoActualizado($event)">
                     </app-empleado-hijo>
                 </td>
             </tr>

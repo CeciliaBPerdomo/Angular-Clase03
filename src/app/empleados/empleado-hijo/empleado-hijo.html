@@ -6,9 +6,10 @@
 </button>
 </div>
 
-<div *ngIf="editando">
-  <input [(ngModel)]="nombreEditado" placeholder="Nombre" />
-  <input [(ngModel)]="puestoEditado" placeholder="Puesto" />
-  <button (click)="guardar()">Guardar</button>
+<div *ngIf="editando" class="mx-5">
+  <input [(ngModel)]="nombreEditado" class="form-control w-75 my-2" placeholder="Nombre" />
+  <input [(ngModel)]="apellidoEditado" class="form-control w-75 my-2" placeholder="Apellido" />
+  <input [(ngModel)]="puestoEditado" class="form-control w-75 my-2"  placeholder="Puesto" />
+  <button class="btn btn-outline-success w-75" (click)="guardar()">Guardar</button>
 </div>
 

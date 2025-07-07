@@ -15,11 +15,13 @@ export class EmpleadoHijo {
 
   editando = false;
   nombreEditado: string = '';
+  apellidoEditado: string = '';
   puestoEditado: string = '';
 
   editar() {
     this.editando = true;
     this.nombreEditado = this.empleado.nombre;
+    this.apellidoEditado = this.empleado.apellido;
     this.puestoEditado = this.empleado.puesto;
   }
 
@@ -28,6 +30,7 @@ export class EmpleadoHijo {
     this.empleadoEditado.emit({
       ...this.empleado,
       nombre: this.nombreEditado,
+      apellido: this.apellidoEditado, 
       puesto: this.puestoEditado
     });
   }

@@ -8,6 +8,8 @@ Crear dos componentes anidados (padre e hijo) para mostrar una lista de empleado
 
 ![alt text](image.png)
 
+![alt text](image-1.png)
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.5.
 
 ## Development server
